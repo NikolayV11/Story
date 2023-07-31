@@ -1,20 +1,26 @@
-a{
+a {
   text-decoration: none;
 }
-*, body{
+*,
+body {
   margin: 0;
   padding: 0;
   font-size: 14px;
   color: #000;
 }
-html, body{
+html,
+body {
   height: 100%;
 }
-body{
+body {
   background-color: #5b6669;
 }
+.material-symbols-outlined {
+  color: red;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
 
-#app{
+#app {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -22,13 +28,13 @@ body{
   max-width: 500px;
   background-color: #ffffff;
 }
-.header{
+.header {
   padding-top: 5px;
 }
-.content{
+.content {
   margin: 0 5px 0 5px;
 }
-.centrBlock{
+.centrBlock {
   background-color: #1bc1eb;
   height: 30px;
   border-radius: 0 0 3px 3px;
@@ -37,40 +43,76 @@ body{
   display: flex;
   justify-content: space-around;
 }
-.storyBlock{
+.storyBlock {
+  position: relative;
   display: flex;
-  overflow: scroll;
-  gap: 6px;
+  overflow: hidden;
+
   padding: 3px;
   height: 80px;
   background-color: #1bc1eb;
   margin-top: 5px;
   border-radius: 3px 3px 15px 15px;
 }
-.storyBlockUser{
-  height: 75px;
+.StoryBlockContent {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+  transform: translateX(0px);
 }
-.storyImgBlock{}
-.imgStory{
+
+.btnStory {
+  color: #ffffff00;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 35px;
+  width: 30px;
+  height: 75px;
+  transition: all 0.3s;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #ffffff00;
+  border: none;
+}
+.btnStory:hover {
+  background-color: #b3aeae3b;
+  color: #000000;
+}
+.btnRight {
+  display: block;
+  left: 460px;
+}
+.btnLeft {
+  display: none;
+  right: 464px;
+}
+.storyBlockUser {
+  height: 75px;
+  width: 50px;
+}
+.storyImgBlock {
+}
+.imgStory {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  
 }
-.storyUserName{
+.storyUserName {
   display: block;
-  border:1px solid #000;
+  border: 1px solid #000;
   border-radius: 3px;
   text-align: center;
 }
-.main{
+.main {
   padding: 15px 5px 15px 5px;
   border-radius: 15px;
   margin-top: 5px;
   flex: 1 1 auto;
   background-color: #ef38e6;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   padding-top: 5px;
@@ -79,16 +121,8 @@ body{
   margin-bottom: 5px;
   height: 35px;
 }
-.btnFooter{
+.btnFooter {
   width: 60px;
   height: 25px;
   text-align: center;
-}
-.material-symbols-outlined {
-  color: red;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
 }
